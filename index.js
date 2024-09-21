@@ -1,4 +1,3 @@
-// index.js
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -9,7 +8,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: 'http://localhost:3000', // Allow requests from this origin
+  origin: '*', // Allow requests from any origin
   methods: ['GET', 'POST'], // Specify allowed methods
   credentials: true, // Allow cookies to be sent
 };
